@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nika-purple: #6a3fb3;
+  --color-straw-gold: #F4C430;
+  --color-straw-gold-hover: #ffe066;
+  --color-blood-red: #C0001A;
+  
+  --font-inter: var(--font-inter);
+  --font-bebas: var(--font-bebas);
+  --font-bangers: var(--font-bangers);
+  --font-luckiest: var(--font-luckiest);
+  --font-cormorant: var(--font-cormorant);
+}
+
+:root {
+  --background: #04060c;
+  --foreground: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Utilities for cinematic effects */
+.text-stroke {
+  -webkit-text-stroke: 3px #0a1a3a;
+}
+
+.text-glow-gold {
+  text-shadow:
+    0 4px 0 #b3001a,
+    0 6px 0 #0a1a3a,
+    0 0 24px rgba(244, 196, 48, 0.45);
+}
+
+.text-glow-purple {
+  text-shadow:
+    3px 3px 0 #6a3fb3,
+    0 0 16px rgba(180, 120, 255, 0.5),
+    0 0 40px rgba(180, 120, 255, 0.3);
+}
+
+.text-glow-red {
+  text-shadow:
+    3px 3px 0 #b3001a, 
+    0 0 14px rgba(192, 0, 26, 0.5), 
+    0 0 36px rgba(192, 0, 26, 0.3);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hide scrollbar for clean look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  pointer-events: none;
+}
+
+/* Custom Webkit Scrollbar for dark theme */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(244, 196, 48, 0.5); /* Gold */
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 196, 48, 0.8);
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(244, 196, 48, 0.5) rgba(255, 255, 255, 0.05);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-nika-purple);
+}
