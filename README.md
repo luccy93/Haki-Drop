@@ -191,12 +191,6 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## 🌐 Live Site
-
-**https://haki-drop.onrender.com**
-
----
-
 ## 🔐 Environment Variables
 
 | Variable | Description |
