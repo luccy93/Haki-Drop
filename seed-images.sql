@@ -22,38 +22,38 @@ UPDATE products SET images = '["/images/products/roger-inherited-will-anorak-1.j
 UPDATE products SET images = '["/images/products/raised-in-wano-kimono-cloak-1.jpg"]' WHERE handle = 'raised-in-wano-kimono-cloak';
 UPDATE products SET images = '["/images/products/emperor-tech-fleece-zip-1.jpg"]' WHERE handle = 'emperor-tech-fleece-zip';
 
--- Stickers & Decals
-UPDATE products SET images = '["/images/products/gear-5-reveal-holographic-sticker-1.jpg"]' WHERE handle = 'gear-5-reveal-holographic-sticker';
-UPDATE products SET images = '["/images/products/haki-crackle-die-cut-vinyl-decal-1.jpg"]' WHERE handle = 'haki-crackle-die-cut-vinyl-decal';
-UPDATE products SET images = '["/images/products/drums-of-liberation-slap-sticker-1.jpg"]' WHERE handle = 'drums-of-liberation-slap-sticker';
-UPDATE products SET images = '["/images/products/wano-arc-collectors-sticker-pack-1.jpg"]' WHERE handle = 'wano-arc-collectors-sticker-pack';
-UPDATE products SET images = '["/images/products/nika-cloud-mini-sticker-sheet-1.jpg"]' WHERE handle = 'nika-cloud-mini-sticker-sheet';
-UPDATE products SET images = '["/images/products/wanokuni-bumper-sticker-1.jpg"]' WHERE handle = 'wanokuni-bumper-sticker';
-UPDATE products SET images = '["/images/products/will-of-d-minimalist-emblem-decal-1.jpg"]' WHERE handle = 'will-of-d-minimalist-emblem-decal';
-UPDATE products SET images = '["/images/products/conquerors-lightning-glow-decal-1.jpg"]' WHERE handle = 'conquerors-lightning-glow-decal';
-UPDATE products SET images = '["/images/products/joyboy-retro-chibi-decal-1.jpg"]' WHERE handle = 'joyboy-retro-chibi-decal';
-UPDATE products SET images = '["/images/products/haki-drop-holographic-box-logo-pack-1.jpg"]' WHERE handle = 'haki-drop-holographic-box-logo-pack';
+-- Stickers & Decals (use custom images by product ID)
+UPDATE products SET images = '["/images/products/3001-gear5.jpg"]' WHERE id = 'gid://shopify/Product/3001';
+UPDATE products SET images = '["/images/products/3002-haki-crackle.jpg"]' WHERE id = 'gid://shopify/Product/3002';
+UPDATE products SET images = '["/images/products/drums-of-liberation-slap-sticker-1.jpg"]' WHERE id = 'gid://shopify/Product/3003';
+UPDATE products SET images = '["/images/products/wano-arc-collectors-sticker-pack-1.jpg"]' WHERE id = 'gid://shopify/Product/3004';
+UPDATE products SET images = '["/images/products/nika-cloud-mini-sticker-sheet-1.jpg"]' WHERE id = 'gid://shopify/Product/3005';
+UPDATE products SET images = '["/images/products/3006-wanokuni.jpg"]' WHERE id = 'gid://shopify/Product/3006';
+UPDATE products SET images = '["/images/products/will-of-d-minimalist-emblem-decal-1.jpg"]' WHERE id = 'gid://shopify/Product/3007';
+UPDATE products SET images = '["/images/products/conquerors-lightning-glow-decal-1.jpg"]' WHERE id = 'gid://shopify/Product/3008';
+UPDATE products SET images = '["/images/products/joyboy-retro-chibi-decal-1.jpg"]' WHERE id = 'gid://shopify/Product/3009';
+UPDATE products SET images = '["/images/products/haki-drop-holographic-box-logo-pack-1.jpg"]' WHERE id = 'gid://shopify/Product/3010';
 
--- Trading Cards
-UPDATE products SET images = '["/images/products/nika-the-sun-god-gold-foil-art-print-1.jpg"]' WHERE handle = 'nika-the-sun-god-gold-foil-art-print';
-UPDATE products SET images = '["/images/products/emperor-luffy-chrome-foil-trading-card-1.jpg"]' WHERE handle = 'emperor-luffy-chrome-foil-trading-card';
-UPDATE products SET images = '["/images/products/wano-arc-climax-lenticular-3d-print-1.jpg"]' WHERE handle = 'wano-arc-climax-lenticular-3d-print';
-UPDATE products SET images = '["/images/products/the-four-emperors-matte-art-poster-1.jpg"]' WHERE handle = 'the-four-emperors-matte-art-poster';
-UPDATE products SET images = '["/images/products/drums-of-liberation-sound-wave-print-1.jpg"]' WHERE handle = 'drums-of-liberation-sound-wave-print';
-UPDATE products SET images = '["/images/products/pirate-king-canvas-wall-scroll-1.jpg"]' WHERE handle = 'pirate-king-canvas-wall-scroll';
-UPDATE products SET images = '["/images/products/conquerors-impact-holo-illustration-1.jpg"]' WHERE handle = 'conquerors-impact-holo-illustration';
-UPDATE products SET images = '["/images/products/wanokuni-sketch-variant-print-1.jpg"]' WHERE handle = 'wanokuni-sketch-variant-print';
-UPDATE products SET images = '["/images/products/will-of-d-secret-rare-card-fragment-1.jpg"]' WHERE handle = 'will-of-d-secret-rare-card-fragment';
-UPDATE products SET images = '["/images/products/inherited-will-triple-panel-display-1.jpg"]' WHERE handle = 'inherited-will-triple-panel-display';
+-- Trading Cards (use custom-4xxx images)
+UPDATE products SET images = '["/images/products/custom-4001.jpg"]' WHERE id = 'gid://shopify/Product/4001';
+UPDATE products SET images = '["/images/products/custom-4002.png"]' WHERE id = 'gid://shopify/Product/4002';
+UPDATE products SET images = '["/images/products/custom-4003.jpg"]' WHERE id = 'gid://shopify/Product/4003';
+UPDATE products SET images = '["/images/products/custom-4004.jpg"]' WHERE id = 'gid://shopify/Product/4004';
+UPDATE products SET images = '["/images/products/custom-4005.png"]' WHERE id = 'gid://shopify/Product/4005';
+UPDATE products SET images = '["/images/products/custom-4006.png"]' WHERE id = 'gid://shopify/Product/4006';
+UPDATE products SET images = '["/images/products/custom-4007.png"]' WHERE id = 'gid://shopify/Product/4007';
+UPDATE products SET images = '["/images/products/custom-4008.png"]' WHERE id = 'gid://shopify/Product/4008';
+UPDATE products SET images = '["/images/products/custom-4009.png"]' WHERE id = 'gid://shopify/Product/4009';
+UPDATE products SET images = '["/images/products/custom-4010.png"]' WHERE id = 'gid://shopify/Product/4010';
 
--- Toys & Figures
-UPDATE products SET images = '["/images/products/gear-5-vinyl-designer-toy-1.jpg"]' WHERE handle = 'gear-5-vinyl-designer-toy';
-UPDATE products SET images = '["/images/products/nika-nendoroid-scale-action-figure-1.jpg"]' WHERE handle = 'nika-nendoroid-scale-action-figure';
-UPDATE products SET images = '["/images/products/the-drums-electronic-desktop-drum-replica-1.jpg"]' WHERE handle = 'the-drums-electronic-desktop-drum-replica';
-UPDATE products SET images = '["/images/products/onigashima-brick-building-architecture-set-1.jpg"]' WHERE handle = 'onigashima-brick-building-architecture-set';
-UPDATE products SET images = '["/images/products/conqueror-custom-resinated-chess-set-1.jpg"]' WHERE handle = 'conqueror-custom-resinated-chess-set';
-UPDATE products SET images = '["/images/products/luffy-gear-5-plush-plush-collectible-1.jpg"]' WHERE handle = 'luffy-gear-5-plush-plush-collectible';
-UPDATE products SET images = '["/images/products/wano-rooftop-die-cast-vehicle-match-1.jpg"]' WHERE handle = 'wano-rooftop-die-cast-vehicle-match';
-UPDATE products SET images = '["/images/products/haki-compass-mechanical-gyro-spinner-1.jpg"]' WHERE handle = 'haki-compass-mechanical-gyro-spinner';
-UPDATE products SET images = '["/images/products/sun-god-glowing-desktop-orb-lamp-1.jpg"]' WHERE handle = 'sun-god-glowing-desktop-orb-lamp';
-UPDATE products SET images = '["/images/products/monkey-d-poseable-figma-masterpiece-1.jpg"]' WHERE handle = 'monkey-d-poseable-figma-masterpiece';
+-- Toys & Figures (use custom-5xxx images)
+UPDATE products SET images = '["/images/products/custom-5001.jpg"]' WHERE id = 'gid://shopify/Product/5001';
+UPDATE products SET images = '["/images/products/custom-5002.jpg"]' WHERE id = 'gid://shopify/Product/5002';
+UPDATE products SET images = '["/images/products/custom-5003.jpg"]' WHERE id = 'gid://shopify/Product/5003';
+UPDATE products SET images = '["/images/products/custom-5004.jpg"]' WHERE id = 'gid://shopify/Product/5004';
+UPDATE products SET images = '["/images/products/custom-5005.jpg"]' WHERE id = 'gid://shopify/Product/5005';
+UPDATE products SET images = '["/images/products/custom-5006.jpg"]' WHERE id = 'gid://shopify/Product/5006';
+UPDATE products SET images = '["/images/products/custom-5007.jpg"]' WHERE id = 'gid://shopify/Product/5007';
+UPDATE products SET images = '["/images/products/custom-5008.jpg"]' WHERE id = 'gid://shopify/Product/5008';
+UPDATE products SET images = '["/images/products/custom-5009.jpg"]' WHERE id = 'gid://shopify/Product/5009';
+UPDATE products SET images = '["/images/products/custom-5010.jpg"]' WHERE id = 'gid://shopify/Product/5010';
