@@ -1,4 +1,4 @@
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
   id TEXT PRIMARY KEY,
   email TEXT UNIQUE NOT NULL,
   password_hash TEXT,
@@ -13,7 +13,7 @@ CREATE TABLE users (
   updated_at TIMESTAMPTZ DEFAULT now()
 );
 
-CREATE TABLE sessions (
+CREATE TABLE IF NOT EXISTS sessions (
   id TEXT PRIMARY KEY,
   user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
   refresh_token TEXT UNIQUE NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE sessions (
   expires_at TIMESTAMPTZ NOT NULL
 );
 
-CREATE TABLE otps (
+CREATE TABLE IF NOT EXISTS otps (
   email TEXT PRIMARY KEY,
   otp TEXT NOT NULL,
   expires_at BIGINT NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE otps (
   verified BOOLEAN DEFAULT false
 );
 
-CREATE TABLE orders (
+CREATE TABLE IF NOT EXISTS orders (
   id TEXT PRIMARY KEY,
   user_id TEXT REFERENCES users(id),
   customer TEXT,
@@ -54,7 +54,7 @@ CREATE TABLE orders (
   created_at TIMESTAMPTZ DEFAULT now()
 );
 
-CREATE TABLE products (
+CREATE TABLE IF NOT EXISTS products (
   id TEXT PRIMARY KEY,
   handle TEXT UNIQUE NOT NULL,
   title TEXT NOT NULL,
