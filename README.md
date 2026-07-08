@@ -9,9 +9,6 @@
   <br />
   An immersive e‑commerce experience powered by Next.js
 </p>
-## 🌐 Live Site
-
-**https://haki-drop.onrender.com**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js" alt="Next.js 15" />
@@ -47,6 +44,9 @@
 
 > Built for fans, by a fan. Every pixel pays homage to Eiichiro Oda's masterpiece.
 
+🌐 Live Site
+
+**https://haki-drop.onrender.com**
 ---
 
 ## 📸 Screenshots
